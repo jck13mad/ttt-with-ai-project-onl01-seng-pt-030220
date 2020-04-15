@@ -1,7 +1,6 @@
 module Players
-  
-  class Computer < Player 
-    
+  class Computer < Player
+
     def move(board)
       if board.cells[4] == " "
         "5"
@@ -9,7 +8,7 @@ module Players
         "1"
       elsif board.cells[2] == " "
         "3"
-      elsif baord.cells[6] == " "
+      elsif board.cells[6] == " "
         "7"
       elsif board.cells[8] == " "
         "9"
@@ -22,9 +21,8 @@ module Players
       elsif board.cells[7] == " "
         "8"
       end
-      
+
     end
-    
+
   end
-  
 end
